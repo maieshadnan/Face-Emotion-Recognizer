@@ -5,4 +5,9 @@ Also, there are seven categories this model will classify your face into: Angry,
 ds_train.class_names[pred] # where pred is the prediction
 ```
 <br/>
+When using in production, make sure to convert to grayscale, resize the image to 48 by 48, and add two dimensions. After that, your shape should be this:
+```
+(1, 48, 48, 1)
+```
+<br/>
 <b>Author</b>: Muhammad Aiesh
